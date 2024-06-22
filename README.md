@@ -1,1 +1,1 @@
-# C-Programming-Basic-Questions
+# Programming-Basic-Questions
