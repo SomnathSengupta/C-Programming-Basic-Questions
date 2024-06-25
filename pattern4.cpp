@@ -5,6 +5,7 @@ int main()
     int count =65;
 //user input 
     int n;
+    cout << "Enter the no of rows: ";
     cin>>n;
 
 //Outer loop is for row 
@@ -22,3 +23,12 @@ for(int i=n;i>=1;i--)
     cout<<endl;
 }
 }
+
+/*
+Enter the no of rows: 4
+ACEG
+IKM
+OQ
+S
+
+*/
