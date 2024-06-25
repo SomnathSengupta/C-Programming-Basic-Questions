@@ -1,32 +1,41 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+using namespace std ;
 int main()
 {
-    //User input  n  
-    int n,m;
-    cin >>n>>m;
-    for (int row=1;row<=n;row++){
-    
-        for (int col=1;col<=m;col++){
-        
-            if ((row==1||row==n)||(col==1||col==m)){
-            
-                // Printing "*"
-                cout <<"*";
-            }
-            else {
-                // Printing Space 
-                cout << " ";
-            }
+    //User input
+    int n;
+    cin >>n;
+    //Outer loop for row
+    for (int i=1;i<=n;i++) {
+        // Loop for space 
+        for (int s=1;s<=n-i;s++){
+            cout<<" ";
         }
-        // Changing line 
-        cout <<endl;
+        // Inner Loop for column
+        for (int j=1;j<=2*i-1;j++){
+            // Printing *
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for (int i=n-1;i>=1;i--) {
+        for (int s=1;s<=n-i;s++){
+            cout<<" ";
+        }
+
+        for (int j=1;j<=2*i-1;j++){
+            cout<<"*";
+        }
+        // Printing the next line 
+        cout<<endl;
     }
 }
-// OUTPUT:
-/*
-*****
-*   *
-*   *
-*****
+/*OUTPUT 
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
 */
