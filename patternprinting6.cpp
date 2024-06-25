@@ -20,4 +20,14 @@ int main()
   return 0;
 }
 
+/*
+Enter the number of rows: 5
+    *
+   ***
+  *****
+ *******
+*********
+
+*/
+
   
