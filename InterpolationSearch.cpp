@@ -68,3 +68,7 @@ int main()
   return 0;
 }
 
+/*
+Enter the element you want to search: 20
+Element found at index: 6
+*/
